@@ -78,6 +78,11 @@ main {
   text-decoration: underline;
   color: red; }
 
+iframe {
+  width: 500px; 
+  height: 315px;
+}
+
 @media (max-width: 1024px) {
 
   .principal {
@@ -134,4 +139,9 @@ main {
   .container-youtube p {
     margin: 3% auto auto 2%;
   }  
+
+  iframe{
+    width: auto;
+    height: auto;
+  }
 }
