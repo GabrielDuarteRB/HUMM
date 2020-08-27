@@ -1,7 +1,9 @@
 
   header {
     background: url("../imagem/background-logo.png") no-repeat center / cover;  
-    width: 100%;}
+    width: 100%;
+    margin: 0px;
+  }
   
   .container-midias {
     display: flex;
@@ -78,7 +80,7 @@
     
     .container-cabecalho {
       justify-content: space-between;
-      width: 30rem; }
+      width: auto; }
 
     .logo {
       width: 25rem;
@@ -89,6 +91,30 @@
     .container-midias {
       width: 25%;
       margin-left: 68%;
+    }
+  }
+
+  @media (max-width: 500px) { 
+
+    .logo {
+      width: 20rem;
+    }
+
+    .container-cabecalho {
+      justify-content: unset;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    
+    .logo {
+      width: 17rem;
+    }
+
+    .container-midias {
+      margin-left: 66%;
+      
     }
   }
 
