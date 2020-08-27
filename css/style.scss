@@ -1,0 +1,272 @@
+//Variaveis
+$cor-padrao-p: #A0522D;
+$cor-padrao-h: #8B4513;
+$cor-background-footer: #B1DEEC;
+$cor-background-main: #DBF6FF;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+/*início do header*/
+
+header{
+    background-image: url('./imagem/background-logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-midias {
+    display: flex;
+    width: 8%;
+    justify-content: space-around;
+    margin-left: 91%;
+}
+
+.midias-cabecalho {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    padding-top: 0.5%;
+}
+
+.midias-cabecalho:hover {
+    height: 35px;
+    width: 35px;
+    opacity: 0.6;
+}
+
+.container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+    width: 980px;
+    height: 235px;
+}
+
+.navbar-esquerda { 
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.navbar-direita { 
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: inline-block;
+    padding: 5%;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    color: $cor-padrao-h;
+    text-transform: uppercase;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.logo{
+    width: 500px;
+}
+
+/*fim do header*/
+
+/*início do footer*/
+
+footer { 
+    background: $cor-background-footer;
+    width: 100%;
+    height: 25%;
+}
+
+.container-rodape {
+    width: 980px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+} 
+
+.midias-rodape {
+    display: flex;
+    align-items: center;
+    margin: 1% auto 0 auto;
+    justify-content: space-between;
+    width: 35%;
+    
+}
+
+.midias-baixo {
+    opacity: 0.4;
+}
+
+.midias-baixo:hover {
+    opacity: 0.9;
+}
+
+.container-rodape p {
+    font-size: 11px;
+    margin-top: 1%;
+    color: white;
+}
+
+.container-rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-rodape a:hover {
+    color: blue;
+}
+
+/*fim do footer*/
+
+/*início da pagina principal*/
+main{
+    background-color: $cor-background-main;
+}
+
+.tamanho-tela {
+    width: 980px;
+    margin: 0 auto 0 auto;
+}
+
+.foto-QuemSomos {
+    float: left;
+    width: 45%;
+    height: 245;
+    margin: 19% 4% 5% auto;
+    box-shadow: 0px 1px 25px black;
+}
+
+.titulo-principal {
+    margin: 13% 0 2% auto;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 56px;
+    line-height: 68px;
+    color: $cor-padrao-h;
+}
+
+.encomenda {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.encomenda h2 {
+    margin-left: 0%;
+}
+
+.principal, .youtube {
+    padding: 3em 0 5em 0;
+}
+
+.principal p {
+    text-indent:2em;
+}
+
+.principal p, .youtube p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    line-height: 33px;
+    color: $cor-padrao-p;
+}
+
+.principal strong, .youtube strong{
+    font-weight: bold;
+}
+
+.youtube {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-youtube {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 56px;
+    line-height: 50px;
+    color: $cor-padrao-h;
+    text-align: center;
+}
+
+.container-youtube p {
+    margin: 7%  auto auto 2%;
+    text-align: center;
+    color: $cor-padrao-p;
+}
+
+.container-youtube a{
+    text-decoration: none;
+    color: $cor-padrao-p;
+}
+
+.container-youtube a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*fim da pagina principal*/
+
+
+/*início do feedback*/
+
+.titulo-subtitulo {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.titulo-feedback {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin: auto 7.8em auto 7.8em;
+    color: darkblue;
+    background-color: darkcyan;
+}
+
+.subtitulo-feedback {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    margin: 0.5em auto 1em;
+    color: lightskyblue;
+}
+
+.feedback img {
+    margin: auto 1em 1em;
+    max-width: 100%;
+    width: 450px;
+    height: 350px;
+    object-fit: initial;
+    box-shadow: 0px 2px 15px 0.5px black;
+    opacity: 0.8;
+}
+
+.feedback img:hover {
+    width: 500px;
+    height: 400px;
+    opacity: 1;
+}
+
+.imagens {
+    text-align: center;
+}
+

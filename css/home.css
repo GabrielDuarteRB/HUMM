@@ -1,0 +1,137 @@
+main {
+  background-color: #DBF6FF; }
+
+.tamanho-tela {
+  width: 980px;
+  margin: 0 auto 0 auto; 
+}
+
+.foto-QuemSomos {
+  float: left;
+  width: 35%;
+  height: 245;
+  margin: 19% 4% 5% auto;
+  box-shadow: 0px 1px 25px black; }
+
+.titulo-principal {
+  margin: 13% 0 2% auto;
+  font-family: Pacifico, cursive;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+  color: #8B4513; }
+
+.responsive {
+  display: none
+}
+
+.encomenda {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5rem auto 5rem auto;
+}
+
+.encomenda-imagem {
+  width: 90%;
+  margin-right: 0;
+}
+
+.encomenda h2 {
+  margin-left: 0%; }
+
+.principal, .youtube {
+  padding: 3em 0 5em 0; }
+
+.principal p {
+  text-indent: 2em; }
+
+.principal p, .youtube p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #A0522D; }
+
+.principal strong, .youtube strong {
+  font-weight: bold; }
+
+.youtube {
+  display: flex;
+  justify-content: space-around; }
+
+.titulo-youtube {
+  font-family: Pacifico, cursive;
+  font-size: 3.5rem;
+  line-height: 3.4rem;
+  color: #8B4513;
+  text-align: center; }
+
+.container-youtube p {
+  margin: 7%  auto auto 2%;
+  text-align: center;
+  color: #A0522D; }
+
+.container-youtube a {
+  text-decoration: none;
+  color: #A0522D; }
+
+.container-youtube a:hover {
+  text-decoration: underline;
+  color: red; }
+
+@media (max-width: 1024px) {
+
+  .principal {
+    padding-bottom: 2rem
+  }
+
+  .foto-QuemSomos {
+    display: none
+  }
+
+  .tamanho-tela {
+    width: auto;
+  }
+
+  .responsive {
+    display: inline-block;
+  }
+
+  .titulo-principal {
+    margin: 0% auto 5% auto;
+    text-align: center;
+  }
+
+  .principal p, .youtube p {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .encomenda {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 1.2rem auto 1.2rem auto;
+  }
+  
+  .encomenda-imagem {
+    width: 100%;
+
+  }
+
+  .encomenda h2 {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .youtube {
+  justify-content: none;
+  align-items: center;
+  flex-direction: column-reverse;
+  }
+
+  .container-youtube p {
+    margin: 3% auto auto 2%;
+  }  
+}
