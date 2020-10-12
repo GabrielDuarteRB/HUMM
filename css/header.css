@@ -26,16 +26,47 @@
   .container-cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto 0 auto;
-    width: 37.5rem;
+    width: 45rem;
     height: 14.6rem; }
+
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: row;
+  }
+
+  .titulos {
+    width: 13rem;
+  }
+
+  .logo-titulo {
+    color: #632223;
+    font-family: 'Engagement', cursive;
+    font-size: 3.5rem;
+  }
+
+  .logo-subtitulo {
+    color: #562619;
+    font-family: 'Pragati Narrow', sans-serif;
+    margin-left: 8%;
+    font-size: 1.2rem;
+  }
+
+  .fouet {
+    position: absolute;
+    margin-top: 7%;
+    left: 79%;
+    width: 45%;
+  }
   
   .navbar-direita{
     display: flex;
     align-items: center;
     margin-right: auto;
-    justify-content: space-around; }
+    justify-content: space-around;
+  }
   
   .navbar {
     display: inline-block;
@@ -53,9 +84,6 @@
   .navbar-link:hover, .ativo {
     text-decoration: underline;
     color: darkblue; }  
-  
-  .logo {
-    width: 31rem; }
 
   @media (max-width: 1400px) {
     .container-midias {
@@ -72,7 +100,7 @@
 
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     .container-midias {
       width: 20%;
       margin-left: 76%;
@@ -80,11 +108,15 @@
     
     .container-cabecalho {
       justify-content: center;
-      width: auto; }
+      width: auto;
+      display: flex;
+      justify-content: space-between; 
+    }
 
     .logo {
-      width: 25rem;
+      margin-right: 10%;
     }
+ 
   }
 
   @media (max-width: 600px) {
@@ -92,25 +124,37 @@
       width: 25%;
       margin-left: 68%;
     }
+
+
   }
 
-  @media (max-width: 500px) { 
+  @media (max-width: 500px) {
 
-    .logo {
-      width: 20rem;
+    .titulos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10%;
+    }
+  
+    .logo-titulo {
+      font-size: 2.5rem;
     }
 
-    .container-cabecalho {
-      justify-content: center;
-      margin: 0;
+    .logo-subtitulo {
+      margin-left: 6%;
+      font-size: .9rem;
+    }
+  
+    .fouet {
+      position: absolute;
+      margin-top: 7%;
+      left: 79%;
+      width: 40%;
     }
   }
 
   @media (max-width: 375px) {
-    
-    .logo {
-      width: 17rem;
-    }
 
     .container-midias {
       margin-left: 66%;
